@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="header">John Smith</h1>
+      <a href="mailto:john.smith@jeemail.com" class="header"
+        >john.smith@jeemail.com</a
+      >
+      <a href="tel:1234567890" class="header">1(234)567-890</a>
+      <nav>
+        <ul>
+          <li><a href="#" class="nav">About Me</a></li>
+          <li><a href="#" class="nav">Skills</a></li>
+          <li><a href="#" class="nav">Projects</a></li>
+          <li><a href="#" class="nav">Reccomendations</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="aboutme">
+        <h2>Hi, I'm John Smith!👋</h2>
+        <img
+          src="images/cartoon_guy.png"
+          alt="image of cartoon man on computer"
+        />
+        <p>
+          Hello! I'm John Smith, a front-end web developer focused on crafting
+          intuitive and visually compelling digital experiences. With a
+          background in technology and computers, I've embarked on a journey to
+          translate my passion for technology and design into impactful web
+          solutions. While my professional experience may be limited, I'm
+          equipped with a solid theoretical foundation and a drive for
+          continuous learning. I specialize in HTML, CSS, and JavaScript, and
+          I'm eager to apply my skills to real-world projects. My goal is to
+          collaborate with clients and teams to deliver polished websites that
+          elevate user engagement and satisfaction. Let's connect and explore
+          how I can contribute to your next web development endeavor!
+        </p>
+      </section>
+      <section class="skills">
+        <h3>Skills</h3>
+        <div class="experienceBox">
+          <img src="images/html.png" alt="html5" />
+          <p>HTML</p>
+          <p>2 years experience</p>
+        </div>
+        <div class="experienceBox">
+          <img src="images/css.png" alt="css3" />
+          <p>CSS</p>
+          <p>2 years experience</p>
+        </div>
+        <div class="experienceBox">
+          <img src="images/js.png" alt="JavaScript" />
+          <p>JavaScript</p>
+          <p>1.5 years experience</p>
+        </div>
+        <div class="experienceBox">
+          <img src="images/git.png" alt="git" />
+          <p>Git</p>
+          <p>2 years experience</p>
+        </div>
+      </section>
+      <section class="projects">
+        <h3>Projects</h3>
+        <div class="projectsList">
+          <h4>Interactive Weather App</h4>
+          <li>
+            Developed a web application that allows users to check the current
+            weather and forecast for any location using a third-party API (e.g.,
+            OpenWeatherMap API).
+          </li>
+          <hr />
+          <h4>E-commerce Product Page</h4>
+          <li>
+            Build a mock e-commerce product page that includes product listings,
+            a product detail view, and a shopping cart interface using HTML,
+            CSS, JavaScript, and React.
+          </li>
+          <hr />
+          <h4>Blog Platform with Markdown Support</h4>
+          <li>
+            Develop a simple blog platform where users can create, edit, and
+            delete blog posts. The blog posts should support Markdown syntax for
+            formatting.
+          </li>
+        </div>
+      </section>
+      <section class="reccomendations">
+        <h3>Reccomendations</h3>
+        <div class="reccomendationsQuotes">
+          <p>
+            " John is a very quick learner and quickly grasps new concepts of
+            Web development. He has a great attitude & he is an excellent team
+            player. He has a curious mind and asks the right questions. He takes
+            initiative within a team and has potential to lead the team. "
+          </p>
+          <p>
+            " Working with John had been an awesome experience. He is highly
+            knowledgable and always goes the extra mile to make sure everything
+            is right. For any future projects that need his expertise, I would
+            definately want tot work with him again. "
+          </p>
+          <p>
+            " I had worked along with John during the initial phase of our
+            venture which needed Web development. He is a commited resource who
+            has an in depth knowledge about the domain. He will be an asset for
+            any orginization. "
+          </p>
+        </div>
+        <div class="reccomendationsInput">
+          <h4>Leave a Reccomendation</h4>
+          <div class="inputBox">
+            <input type="text" placeholder="Name (Optional)" id="name" />
+            <input type="text" placeholder="Message" id="message" />
+            <button id="submitBtn">Submit</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img
+        src="images/teal_arrow.png"
+        alt="go to top of page"
+        id="scrollToTopBtn"
+      />
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
