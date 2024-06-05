@@ -5,10 +5,9 @@ body {
 header {
   background-color: #00897b;
   color: white;
-  padding: 1.5em;
+  padding: 0 0 0 2.5em;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4fr 1fr 1fr;
   align-items: center;
 }
 .header {
@@ -47,26 +46,32 @@ h2 {
   color: #00897b;
   font-size: 2em;
 }
-.aboutme {
+#aboutme {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding: 0 2.5em;
+  grid-template-rows: 1fr 3fr;
+  padding: 2.5em 2.5em;
   margin: 0 auto;
+  align-items: center;
 }
-.aboutme img {
+#aboutme img {
   grid-column: 1/2;
-  height: 30em;
+  max-width: 75%;
   grid-row: 1/3;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
 }
-.aboutme h2 {
+#aboutme h2 {
   grid-column: 2/3;
-  grid-row: 1/3;
-  align-content: center;
+  grid-row: 1/2;
   margin: 0;
+  font-size: 2.5em;
 }
-.aboutme p {
+#aboutme p {
   grid-column: 2/3;
   grid-row: 2/3;
+  font-size: 1.5em;
 }
 h3 {
   color: #00897b;
@@ -74,14 +79,14 @@ h3 {
   margin-bottom: 0.5em;
 }
 main {
-  margin: 0 4em;
+  margin: 0 10em;
 }
-.skills {
+#skills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-.skills img {
+#skills img {
   max-width: 15%;
   margin-top: 1em;
 }
@@ -93,6 +98,10 @@ main {
   text-align: center;
   margin: 0 2.5em;
 }
+.experienceBox:hover {
+  transition: filter .3s ease-in-out, transform .5s ease-in-out;
+  transform: scale(1.05);
+}
 .projectsList {
   margin: 0 5em;
 }
@@ -102,68 +111,59 @@ hr {
   margin-bottom: 1.5em;
   border-top: 2px solid #c0c0c0;
 }
+.bobaburger {
+  max-width: 25em;
+  filter: saturate(.25);
+  border: 2.5px solid #00897b;
+  border-radius: .45em;
+  margin-bottom: 1em;
+  margin-left: 2.6em;
+}
+.bobaburger:hover {
+  filter: none;
+  transition: filter .3s ease-in-out, transform .5s ease-in-out;
+  transform: scale(1.05);
+}
 h4 {
   font-weight: bold;
   font-size: 1.25em;
   margin: 0.5em 0;
+}
+h4 a {
+  color: black;
+  text-decoration: none;
+}
+h4 a:hover {
+  color: #00897b;
+  text-decoration: none;
+  font-size: 1.1em;
 }
 .projectsList li {
   margin-left: 1.25em;
   margin-bottom: 1.5em;
 }
 .reccomendationsQuotes {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2em;
-  margin: 0 8em;
+  text-align: center;
 }
-.reccomendationsQuotes p {
-  border: 2px solid #c0c0c0;
-  border-radius: 10px;
-  padding: 1em;
-  font-style: italic;
+.reccomendationsQuotes a {
+  color: black;
+  padding: 0 1%;
 }
-.reccomendationsInput {
-  margin: 0 20em;
-}
-.reccomendations h4 {
-  font-size: 1.5em;
-}
-.inputBox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#name {
-  width: 100%;
-  margin-bottom: 1em;
-}
-#message {
-  width: 100%;
-  height: 15em;
-  line-height: 1;
-  margin-bottom: 2.5em;
-}
-button {
-  background-color: transparent;
-  border: 2px solid #00897b;
-  border-radius: 8px;
-  padding: 0.5em 5em;
+.reccomendationsQuotes a:hover {
   color: #00897b;
-  font-weight: bolder;
-  font-size: 16px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-button:hover {
-  background-color: #00897b;
-  color: white;
 }
 footer {
     text-align: right;
 }
-footer img {
+.social {
+  max-width: 2.5em;
+  max-height: 2.5em;
+  padding-bottom: .5em;
+}
+#scrollToTopBtn {
     max-width: 2.5em;
     padding: 1em 2em;
+}
+#scrollToTopBtn:hover {
+    cursor: pointer;
 }
