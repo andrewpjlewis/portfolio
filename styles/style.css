@@ -229,7 +229,8 @@ footer {
   }
   body {
     overflow-x: hidden;
-    width: 90%;
+    width: 100%;
+    max-width: 100%;
   }
   nav {
     width: 100%;
@@ -255,6 +256,7 @@ footer {
   #aboutme h2 {
     font-size: 3em;
     padding: 1em 0;
+    text-align: center;
   }
   #aboutme img {
     max-width: 75%;
@@ -267,8 +269,15 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  .projectslist {
+    margin: 0;
+  }
   .experienceBox {
     margin: 1em 0;
+  }
+  .bobaburger {
+    margin: 0;
+    align-items: left;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
@@ -279,7 +288,8 @@ footer {
   }
   body {
     overflow-x: hidden;
-    width: 83%;
+    width: 100%;
+    max-width: 100%;
   }
   nav {
     width: 100%;
@@ -305,6 +315,7 @@ footer {
   #aboutme h2 {
     font-size: 3em;
     padding: 1em 0;
+    text-align: center;
   }
   #aboutme img {
     max-width: 75%;
