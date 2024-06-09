@@ -221,11 +221,65 @@ footer {
     cursor: pointer;
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 600px) {
   header {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  body {
+    overflow-x: hidden;
+    width: 90%;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    align-items: center;
+  }
+  main {
+    margin: 0;
+    padding: 0 3em;
+  }
+  #aboutme {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  #aboutme h2 {
+    font-size: 3em;
+    padding: 1em 0;
+  }
+  #aboutme img {
+    max-width: 75%;
+  }
+  #aboutme p {
+    font-size: 1.5em;
+    padding-top: 1.5em;
+  }
+  #skills {
+    display: flex;
+    flex-direction: column;
+  }
+  .experienceBox {
+    margin: 1em 0;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body {
+    overflow-x: hidden;
+    width: 83%;
   }
   nav {
     width: 100%;
