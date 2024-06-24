@@ -27,6 +27,9 @@ nav a {
 }
 #menu-toggle {
     display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
 #table-img {
     width: 100%;
@@ -380,15 +383,15 @@ main.menu-grid {
 .aboutus-img img {
     width: 100%;
 }
-.about-us-p {
+.aboutus-p {
     display: grid;
     grid-template-rows: 1fr 2fr;
     grid-template-columns: 2fr .25fr 2fr .25fr 2fr;
 }
-.about-us-p h2 {
+.aboutus-p h2 {
     font-size: 2em;
 }
-.about-us-p p {
+.aboutus-p p {
     font-size: 1.15em;
     padding: 15px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
@@ -443,6 +446,37 @@ main.menu-grid {
         display: flex;
         flex-direction: column;
         padding: 2em;
+    }
+    main.menu-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .boba-background {
+        max-width: 65%;
+        padding: 0;
+        margin: 0;
+    }
+    .assorted-boba-background {
+        max-width: 65%;
+        padding: 0;
+        margin: 0;
+    }
+    div.menu {
+        padding: 0 2em;
+        margin: 1em 2em;
+    }
+    main.aboutus-grid {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2em;
+    }
+    .top-paragraph {
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutus-p {
+        display: flex;
+        flex-direction: column;
     }
     footer {
         flex-direction: column;
