@@ -1,126 +1,114 @@
-
-
-nav {
-    display: grid;
-    justify-content: center;
+body {
     background-color: #f6d193;
-    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
-    place-items: center;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f6d193;
     line-height: 2.25em;
 }
 nav a {
-    text-align: center;
     color: #783e04;
     text-decoration: none;
     margin: auto;
     font-size: 1.5em;
+    padding: 0 2.5em;
 }
-nav a:hover {
+#home:hover, #menu:hover, #about:hover {
     background-color: #AABD8C;
     color: white;
 }
-nav a img {
-    width: 100px;
-
+.logo {
+    width: 5em;
 }
-#home {
-    grid-column: 3/4;
+#logo-link {
+    padding: .25em;
+    height: 5em;
 }
-#menu {
-    grid-column: 4/5;
-}
-#about {
-    grid-column: 5/6;
+#menu-toggle {
+    display: none;
 }
 #table-img {
     width: 100%;
 }
-body {
-    background-color: #f6d193;
-}
 .food-img {
     display: grid;
-    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+    grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: 4fr 1fr;
-    padding-top: 50px;
-    padding-bottom: 75px;
+    grid-gap: 1em;
+    padding-top: 2.5em;
+    padding-bottom: 3.5em;
+    margin: 0 5em;
 }
 .burger {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    width: 350px;
-    align-self: center;
+    width: 22.5em;
 }
 /* Flip card CSS */
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card1 {
     background-color: transparent;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    grid-column: 2/3;
+    perspective: 1000px;
+    grid-column: 1/2;
     grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
   }
   
-  /* This container is needed to position the front and back side */
+
   .flip-card-inner1 {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 22.5em;
+    height: 22.5em;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
   .flip-card1:hover .flip-card-inner1 {
     transform: rotateY(180deg);
   }
   
-  /* Position the front and back side */
   .flip-card-front1, .flip-card-back1 {
     position: absolute;
-    width: 350px;
-    height: 350px;
+    width: 22.5em;
+    height: 22.5em;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
   .flip-card-front1 {
     background-color: #bbb;
     color: black;
   }
   
-  /* Style the back side */
   .flip-card-back1 {
     background-color: #f6d193;
     color: #783e04;
     transform: rotateY(180deg);
-    width: 350px;
-    height: 350px;
+    width: 22.5em;
+    height: 22.5em;
     border: 2px solid #a78446;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
 
 .chips {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    width: 350px;
-    align-self: center;
+    width: 22.5em;
 }
 /* Flip card CSS */
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card2 {
     background-color: transparent;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
   }
   
   /* This container is needed to position the front and back side */
   .flip-card-inner2 {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 22.5em;
+    height: 22.5em;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -134,8 +122,8 @@ body {
   /* Position the front and back side */
   .flip-card-front2, .flip-card-back2 {
     position: absolute;
-    width: 350px;
-    height: 350px;
+    width: 22.5em;
+    height: 22.5em;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
   }
@@ -151,17 +139,16 @@ body {
     background-color: #f6d193;
     color: #783e04;
     transform: rotateY(180deg);
-    width: 350px;
-    height: 350px;
+    width: 22.5em;
+    height: 22.5em;
     border: 2px solid #a78446;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .boba {
-    grid-column: 4/5;
+    grid-column: 3/4;
     grid-row: 1/2;
-    width: 350px;
-    height: 350px;
-    align-self: center;
+    width: 22.5em;
+    height: 22.5em;
 }
 
 /* Flip card CSS */
@@ -169,15 +156,17 @@ body {
 .flip-card3 {
     background-color: transparent;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    grid-column: 4/5;
+    grid-column: 3/4;
     grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
   }
   
   /* This container is needed to position the front and back side */
   .flip-card-inner3 {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 22.5em;
+    height: 22.5em;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -191,8 +180,8 @@ body {
   /* Position the front and back side */
   .flip-card-front3, .flip-card-back3 {
     position: absolute;
-    width: 350px;
-    height: 350px;
+    width: 22.5em;
+    height: 22.5em;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
   }
@@ -208,8 +197,8 @@ body {
     background-color: #f6d193;
     color: #783e04;
     transform: rotateY(180deg);
-    width: 350px;
-    height: 350px;
+    width: 22.5em;
+    height: 22.5em;
     border: 2px solid #a78446;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -217,9 +206,9 @@ body {
     margin: 25px;
 }
 .order {
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 2/3;
-    align-self: center;
+    justify-self: center;
     text-align: center;
     padding: 20px; 
     margin: 20px;
@@ -232,34 +221,33 @@ body {
 }
 .body-text-img {
     display: grid;
-    grid-template-rows: 10fr 1fr 10fr;
-    grid-template-columns: 10fr 1fr 10fr;
-    padding-right: 150px;
-    padding-left: 75px;
+    grid-template-rows: 10fr 10fr;
+    grid-template-columns: 10fr 10fr;
+    grid-gap: 1em;
+    padding-right: 10em;
+    padding-left: 10em;
 }
 #restaurant {
     grid-row: 1/2;
     grid-column: 1/2;
     justify-self: center;
     align-self: center;
-
-    width: 500px;
+    width: 100%;
 }
 .text1 {
     grid-row: 1/2;
-    grid-column: 3/4;
+    grid-column: 2/3;
     text-align: left;
     font-size: 1.5em;
     line-height: 2em;
     color: white;
     background-color: #AABD8C;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
     align-self: center;
-    height: 400px;
 }
 .text2 {
-    grid-row: 3/4;
+    grid-row: 2/3;
     grid-column: 1/2;
     text-align: left;
     font-size: 1.5em;
@@ -267,17 +255,16 @@ body {
     color: white;
     background-color: #AABD8C;
     padding-top: 5px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
     align-self: center;
-    height: 300px;
 }
 #thumbs-up {
-    grid-row: 3/4;
-    grid-column: 3/4;
+    grid-row: 2/3;
+    grid-column: 2/3;
     justify-self: center;
     align-self: center;
-    width: 500px;
+    width: 100%
 }
 footer {
     background-color: #f6d193;
@@ -417,7 +404,6 @@ main.menu-grid {
 #p1 {
     grid-row: 2/3;
     grid-column: 1/2;
-
 }
 #community {
     grid-row: 1/2;
@@ -436,4 +422,30 @@ main.menu-grid {
 #p3 {
     grid-row: 2/3;
     grid-column: 5/6;
+}
+
+
+@media screen and (max-width: 900px) {
+    nav {
+        flex-direction: column;
+    }
+    #menu {
+        flex-direction: column;
+    }
+    .food-img {
+        display: flex;
+        flex-direction: column;
+    }
+    .order {
+        align-self: center;
+    }
+    .body-text-img {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+    }
+    footer {
+        flex-direction: column;
+        margin-top: 3em;
+    }
 }
