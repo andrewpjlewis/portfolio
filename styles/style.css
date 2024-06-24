@@ -278,6 +278,7 @@ footer {
   .bobaburger {
     margin: 0;
     align-items: left;
+    max-width: 100%;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
