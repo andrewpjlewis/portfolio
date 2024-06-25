@@ -11,15 +11,29 @@
 <body>
     <div id="content">
         <header>
-            <nav>
-                <a id="logo_link" href="index.html">
-                    <img class="logo" src="images/logo.jpg" alt="Boba Burger Logo">
-                </a>
+            <div class="off-screen-menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+              </ul>
+            </div>
+            <nav id="nav">
+              <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.jpg" alt="Boba Burger Logo" />
+              </a>
+              <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div id="hamburger">
                 <a id="home" href="index.html">Home</a>
                 <a id="menu" href="menu.html">Menu</a>
                 <a id="about" href="aboutus.html">About Us</a>
+              </div>
             </nav>
-        </header>
+          </header>
         <div id="">
             <div id="table-box">
                 <img id="table-img" src="images/food-table-bottom.jpg" alt="Table with food">
@@ -65,5 +79,6 @@
             </div>
         </footer>
     </div>
+    <script src="scripts/hamburger.js"></script>
 </body>
 </html>

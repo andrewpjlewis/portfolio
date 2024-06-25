@@ -1,14 +1,7 @@
-window.addEventListener('resize', function() {
-    var screenWidth = window.innerWidth;
-    var hamburgerMenu = document.querySelector('.hamburger-menu');
-    if (screenWidth <= 900) {
-        hamburgerMenu.style.display = 'block';
-    } else {
-        hamburgerMenu.style.display = 'none';
-    }
-});
+const hamMenu = document.querySelector('.ham-menu');
+const offScreenMenu = document.querySelector('.off-screen-menu')
 
-// JavaScript to toggle the visibility of the menu
-document.querySelector('.menu-toggle').addEventListener('click', function() {
-    document.querySelector('.menu-items').classList.toggle('show');
-});
+hamMenu.addEventListener('click', () => {
+    hamMenu.classList.toggle('active');
+    offScreenMenu.classList.toggle('active');
+})

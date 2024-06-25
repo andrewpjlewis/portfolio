@@ -1,96 +1,160 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boba Burger | Home</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
     <div id="content">
-        <header>
-            <nav id="nav">
-                <a id="logo_link" href="index.html">
-                    <img class="logo" src="images/logo.jpg" alt="Boba Burger Logo">
-                </a>
-                <img id="menu-toggle" src="images/hamburger_menu.png" alt="hamburger menu icon">
-                <a id="home" href="index.html">Home</a>
-                <a id="menu" href="menu.html">Menu</a>
-                <a id="about" href="aboutus.html">About Us</a>
-            </nav>
-        </header>  
-        <div id="hero">
-            <div id="hero-box">
-                <img id="table-img" src="images/food-table.jpg" alt="Table with food">
-            </div>
+      <header>
+        <div class="off-screen-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
         </div>
-        <main class="home-grid">
-            <div class="food-img">
-                <div class="flip-card1">
-                    <div class="flip-card-inner1">
-                      <div class="flip-card-front1">
-                        <img class="burger" src="images/burger.jpg" alt="burger">
-                      </div>
-                      <div class="flip-card-back1">
-                        <h1 id="flavor_text">American Cheese Burger</h1>
-                        <p id="flavor_text"></p>
-                        <p id="flavor_text">Juicy, grilled beef meets melting cheese all nestled within a soft, toasted bun. It's the quintessential taste of comfort, capturing the essence of American culinary simplicity and satisfaction.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flip-card2">
-                    <div class="flip-card-inner2">
-                      <div class="flip-card-front2">
-                        <img class="chips" src="images/chips-salsa.jpg" alt="chips and salsa">
-                      </div>
-                      <div class="flip-card-back2">
-                        <h1 id="flavor_text">Chips and Salsa</h1>
-                        <p id="flavor_text"></p>
-                        <p id="flavor_text">Crispy, golden chips served with a side of freshly made salsa. Each bite delivers a harmonious blend of tangy, spicy, and savory flavors, inviting you on a delightful taste journey.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flip-card3">
-                    <div class="flip-card-inner3">
-                      <div class="flip-card-front3">
-                        <img class="boba" src="images/green-boba.jpg" alt="burger">
-                      </div>
-                      <div class="flip-card-back3">
-                        <h1 id="flavor_text">Boba Milk tea</h1>
-                        <p id="flavor_text"><p>
-                        <p id="flavor_text">Savor the sweet fusion of creamy milk tea paired with chewy, pearl boba. A delightful blend that marries the richness of tea with the playful texture of tapioca pearls, making each sip an indulgent escape to flavor paradise.</p>
-                      </div>
-                    </div>
-                  </div>
-                <a class="order" href="menu.html">Order Here</a>
+        <nav id="nav">
+          <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.jpg" alt="Boba Burger Logo" />
+          </a>
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div id="hamburger">
+            <a id="home" href="index.html">Home</a>
+            <a id="menu" href="menu.html">Menu</a>
+            <a id="about" href="aboutus.html">About Us</a>
+          </div>
+        </nav>
+      </header>
+      <div id="hero">
+        <div id="hero-box">
+          <img
+            id="table-img"
+            src="images/food-table.jpg"
+            alt="Table with food"
+          />
+        </div>
+      </div>
+      <main class="home-grid">
+        <div class="food-img">
+          <div class="flip-card1">
+            <div class="flip-card-inner1">
+              <div class="flip-card-front1">
+                <img class="burger" src="images/burger.jpg" alt="burger" />
+              </div>
+              <div class="flip-card-back1">
+                <h1 id="flavor_text">American Cheese Burger</h1>
+                <p id="flavor_text"></p>
+                <p id="flavor_text">
+                  Juicy, grilled beef meets melting cheese all nestled within a
+                  soft, toasted bun. It's the quintessential taste of comfort,
+                  capturing the essence of American culinary simplicity and
+                  satisfaction.
+                </p>
+              </div>
             </div>
-            <div class="body-text-img">
-                <img id="restaurant" src="images/restaurant.jpg" alt="image of the restaurant">
-                <p class="text1">Indulge your taste buds in a culinary journey unlike any other as we proudly present our delectable fusion of American burgers and tantalizing boba beverages. At Boba Burger, we believe that every meal should be an experience to remember, which is why we've meticulously crafted each dish to perfection, blending the best of both worlds to create a symphony of flavors that will leave you craving more.</p>
-                <img id="thumbs-up" src="images/thumbs-up.jpg" alt="team smiling and thumbs up">
-                <p class="text2">Join us at Boba Burger and experience a culinary adventure like no other. From our mouthwatering creations to our friendly service and convenient online ordering, we're committed to delivering an unforgettable dining experience that will keep you coming back for more. Come taste the magic of Boba Burger today!</p>
+          </div>
+          <div class="flip-card2">
+            <div class="flip-card-inner2">
+              <div class="flip-card-front2">
+                <img
+                  class="chips"
+                  src="images/chips-salsa.jpg"
+                  alt="chips and salsa"
+                />
+              </div>
+              <div class="flip-card-back2">
+                <h1 id="flavor_text">Chips and Salsa</h1>
+                <p id="flavor_text"></p>
+                <p id="flavor_text">
+                  Crispy, golden chips served with a side of freshly made salsa.
+                  Each bite delivers a harmonious blend of tangy, spicy, and
+                  savory flavors, inviting you on a delightful taste journey.
+                </p>
+              </div>
             </div>
-            
-        </main>
-        <footer>
-            <p>&copy; 2024 Boba Burger</p>
-            <p>1234 Restaurant Way, Rexburg, ID 83440</p>
-            <p><a href="site-plan.html">Site Plan</a></p>
-            <div class="social">
-                <a href="https://github.com/andrewpjlewis/portfolio.git" target="_blank" class="github">
-                    <img src="images/github-mark.png" alt="github icon">
-                </a>
-                <a href="https://linkedin.com/in/andrew-lewis-b15400301" target="_blank" class="linkedin">
-                    <img src="images/LI-In-Bug.png" alt="linkedin icon">
-                </a>
-                <a href="https://instagram.com" target="_blank" class="instagram">
-                    <img src="images/instagram.png" alt="instagram icon">
-                </a>
+          </div>
+          <div class="flip-card3">
+            <div class="flip-card-inner3">
+              <div class="flip-card-front3">
+                <img class="boba" src="images/green-boba.jpg" alt="burger" />
+              </div>
+              <div class="flip-card-back3">
+                <h1 id="flavor_text">Boba Milk tea</h1>
+                <p id="flavor_text"></p>
+                <p></p>
+                <p id="flavor_text">
+                  Savor the sweet fusion of creamy milk tea paired with chewy,
+                  pearl boba. A delightful blend that marries the richness of
+                  tea with the playful texture of tapioca pearls, making each
+                  sip an indulgent escape to flavor paradise.
+                </p>
+              </div>
             </div>
-        </footer>
+          </div>
+          <a class="order" href="menu.html">Order Here</a>
+        </div>
+        <div class="body-text-img">
+          <img
+            id="restaurant"
+            src="images/restaurant.jpg"
+            alt="image of the restaurant"
+          />
+          <p class="text1">
+            Indulge your taste buds in a culinary journey unlike any other as we
+            proudly present our delectable fusion of American burgers and
+            tantalizing boba beverages. At Boba Burger, we believe that every
+            meal should be an experience to remember, which is why we've
+            meticulously crafted each dish to perfection, blending the best of
+            both worlds to create a symphony of flavors that will leave you
+            craving more.
+          </p>
+          <img
+            id="thumbs-up"
+            src="images/thumbs-up.jpg"
+            alt="team smiling and thumbs up"
+          />
+          <p class="text2">
+            Join us at Boba Burger and experience a culinary adventure like no
+            other. From our mouthwatering creations to our friendly service and
+            convenient online ordering, we're committed to delivering an
+            unforgettable dining experience that will keep you coming back for
+            more. Come taste the magic of Boba Burger today!
+          </p>
+        </div>
+      </main>
+      <footer>
+        <p>&copy; 2024 Boba Burger</p>
+        <p>1234 Restaurant Way, Rexburg, ID 83440</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <div class="social">
+          <a
+            href="https://github.com/andrewpjlewis/portfolio.git"
+            target="_blank"
+            class="github"
+          >
+            <img src="images/github-mark.png" alt="github icon" />
+          </a>
+          <a
+            href="https://linkedin.com/in/andrew-lewis-b15400301"
+            target="_blank"
+            class="linkedin"
+          >
+            <img src="images/LI-In-Bug.png" alt="linkedin icon" />
+          </a>
+          <a href="https://instagram.com" target="_blank" class="instagram">
+            <img src="images/instagram.png" alt="instagram icon" />
+          </a>
+        </div>
+      </footer>
     </div>
     <script src="scripts/hamburger.js"></script>
-</body>
+  </body>
 </html>
